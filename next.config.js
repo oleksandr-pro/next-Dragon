@@ -7,10 +7,10 @@ require('dotenv').config();
 
 module.exports = withPlugins([[withSass], [withImages]], {
   webpack(config, options) {
-    config.plugins.push(
-        new webpack.EnvironmentPlugin(process.env)
-    );
     config.resolve.modules.push(path.resolve("./"));
     return config;
+  },
+  env: {
+    APP_NAME: process.env.APP_NAME
   }
 });
