@@ -18,12 +18,13 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/nextjs-material-kit/pages/landingPage.js";
 
 // Sections for this page
-import ProductSection from "pages-sections/LandingPage-Sections/ProductSection.js";
-import TeamSection from "pages-sections/LandingPage-Sections/TeamSection.js";
+import AboutMe from "pages-sections/LandingPage-Sections/AboutMe.js";
+import Projects from "pages-sections/LandingPage-Sections/Projects";
 import WorkSection from "pages-sections/LandingPage-Sections/WorkSection.js";
 
 // constants
-import { ENV } from '../constants';
+import {ENV, USER} from '../constants';
+import {addLineBreaks} from "../utils/func";
 
 const dashboardRoutes = [];
 
@@ -52,21 +53,16 @@ export default function LandingPage(props) {
                         <GridItem xs={12} sm={12} md={6}>
                             <h1 className={classes.title}>{ENV.appName}</h1>
                             <h4>
-                                Every landing page needs a small description after the big bold
-                                title, that{"'"}s why we added this text here. Add here all the
-                                information that can make you or your product create the first
-                                impression.
+                                { addLineBreaks(USER.description)}
                             </h4>
                             <br />
                             <Button
                                 color="danger"
                                 size="lg"
-                                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <i className="fas fa-play" />
-                                Watch video
+                                Contact Now
                             </Button>
                         </GridItem>
                     </GridContainer>
@@ -74,8 +70,8 @@ export default function LandingPage(props) {
             </Parallax>
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <div className={classes.container}>
-                    <ProductSection />
-                    <TeamSection />
+                    <AboutMe />
+                    <Projects />
                     <WorkSection />
                 </div>
             </div>

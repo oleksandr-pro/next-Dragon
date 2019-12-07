@@ -1,7 +1,7 @@
 import { cardTitle, title } from "assets/jss/nextjs-material-kit.js";
 import imagesStyle from "assets/jss/nextjs-material-kit/imagesStyles.js";
 
-const teamStyle = {
+const productContentStyle = {
   section: {
     padding: "70px 0",
     textAlign: "center"
@@ -41,7 +41,7 @@ const teamStyle = {
   },
   margin5: {
     margin: "5px"
-  }
+  },
 };
 
-export default teamStyle;
+export default productContentStyle;

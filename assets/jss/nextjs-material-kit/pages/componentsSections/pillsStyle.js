@@ -2,7 +2,8 @@ import { container, title } from "assets/jss/nextjs-material-kit.js";
 
 const pillsStyle = {
   section: {
-    padding: "70px 0"
+    padding: "70px 0",
+    textAlign: "center"
   },
   container,
   title: {
@@ -10,7 +11,7 @@ const pillsStyle = {
     marginTop: "30px",
     minHeight: "32px",
     textDecoration: "none"
-  }
+  },
 };
 
 export default pillsStyle;
