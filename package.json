@@ -5,13 +5,33 @@
   "scripts": {
     "dev": "node server.js -p $PORT",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js -p $PORT"
+    "start": "NODE_ENV=production node server.js -p $PORT",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev"
   },
   "dependencies": {
+    "@material-ui/core": "4.3.2",
+    "@material-ui/icons": "4.2.1",
+    "@zeit/next-sass": "1.0.1",
+    "classnames": "2.2.6",
+    "dotenv": "^8.2.0",
     "express": "latest",
+    "lodash": "^4.17.15",
+    "moment": "2.24.0",
     "next": "latest",
+    "next-compose-plugins": "2.2.0",
+    "next-images": "1.1.2",
+    "nextjs-redirect": "1.0.2",
+    "node-sass": "4.12.0",
+    "nouislider": "14.0.2",
+    "path": "0.12.7",
+    "prop-types": "15.7.2",
     "react": "latest",
-    "react-dom": "latest"
+    "react-datetime": "2.16.3",
+    "react-dom": "latest",
+    "react-slick": "0.25.2",
+    "react-swipeable-views": "0.13.3",
+    "styled-components": "4.3.2",
+    "webpack": "4.39.3"
   },
   "engines": {
     "node": "10.x"
