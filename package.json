@@ -15,7 +15,7 @@
     "classnames": "2.2.6",
     "dotenv": "^8.2.0",
     "express": "latest",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "2.24.0",
     "next": "latest",
     "next-compose-plugins": "2.2.0",
